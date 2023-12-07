@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Web Shop</title>
+    <style>
+        #productList {
+            display: none;
+        }
+
+        .product-container {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Web Shop</h1>
+
+    <button type="button" onclick="deleteAllProducts()">Delete All Products</button>
+    <button type="button" onclick="refreshProducts()">Get All Products</button>
+
+    <div id="productList"></div>
+
+    <script src="scripts/webshop.js"></script>
+</body>
+
+</html>

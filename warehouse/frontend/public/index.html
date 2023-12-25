@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Warehouse</title>
+</head>
+<body>
+    <div id="welcome-container">
+        <h1>Welcome to the Warehouse</h1>
+    </div>
+
+
+    <form id="productForm">
+
+        <label for="code">Code:</label>
+        <input type="text" id="code" required>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" required>
+
+        <label for="countInStock">Count In Stock:</label>
+        <input type="number" id="countInStock" required>
+
+        <button type="button" onclick="addProductToWarehouse()">Add Product</button>
+
+        <button type="button" onclick="refreshData()">Get/Refresh Data</button>
+    </form>
+
+
+    <ul id="productList" class="warehouse-container"></ul>
+
+    <script src="scripts/warehouse.js"></script>
+</body>
+</html>
